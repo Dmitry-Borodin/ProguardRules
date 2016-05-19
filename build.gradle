@@ -1,0 +1,7 @@
+android {
+    packagingOptions {
+        exclude 'asm-license.txt'
+        exclude 'LICENSE'
+        exclude 'NOTICE'
+    }
+}
