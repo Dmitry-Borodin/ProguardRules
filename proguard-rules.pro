@@ -114,6 +114,9 @@
 -keep class com.activeandroid.**.** { *; }
 -keep class * extends com.activeandroid.Model
 -keep class * extends com.activeandroid.serializer.TypeSerializer
+-keepattributes Column
+-keepattributes Table
+-keepclasseswithmembers class * { @com.activeandroid.annotation.Column <fields>; }
 
 #Jackson (~2.4)
 -keepattributes *Annotation*,EnclosingMethod,Signature
