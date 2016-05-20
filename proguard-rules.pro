@@ -16,6 +16,9 @@
 #   public *;
 #}
 
+#in-app-billing
+-keep class com.android.vending.billing.**
+
 #retrofit 2
 -dontwarn retrofit2.**
 -keep class retrofit2.** { *; }
